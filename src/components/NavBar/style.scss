@@ -1,0 +1,30 @@
+@import "../../common/scss/common.scss";
+
+@font-face {
+  font-family: 'flicker';
+  src: url('/font/flicker.otf');
+}
+
+#NavBar {
+  height: 100px;
+  @include flex;
+  @include flex-direction(row-reverse);
+  @include align-items(center);
+  .dice_icon {
+    height: 40px;
+    margin-right: 5%;
+  }
+  .links_container {
+    padding: 10px;
+    font-family: flicker;
+    margin-right: 10px;
+    color: white;
+    background-color: #FCC030;
+    .link_icon {
+      margin: 10px;
+      height: 20px;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}

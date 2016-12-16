@@ -1,0 +1,40 @@
+@import "./../../common/scss/common.scss";
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  height: 100%;
+  font-family: monospace;
+  background-color: #FDD10E;
+  .common_block {
+    width: 80%;
+    margin-left: 10%;
+  }
+  #topContainer {
+    height: 100%;
+    #homeContainer {
+      height: 100%;
+    }
+    .main_container {
+      margin-left: 5%;
+      height: 80%;
+      @include flex;
+      @include flex-direction(column);
+      @include justify-content(center);
+      .container {
+        @include flex;
+        @include align-items(center);
+        .main_text {
+          width: 60%;
+        }
+        .home_smile {
+          margin-left: 5%;
+          width: 35%;
+        }
+      }
+    }
+  }
+}
