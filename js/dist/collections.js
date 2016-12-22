@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(22);
+	module.exports = __webpack_require__(16);
 
 
 /***/ },
@@ -596,13 +596,7 @@
 /* 13 */,
 /* 14 */,
 /* 15 */,
-/* 16 */,
-/* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */,
-/* 21 */,
-/* 22 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -621,6 +615,10 @@
 
 	var _index2 = _interopRequireDefault(_index);
 
+	var _index3 = __webpack_require__(17);
+
+	var _index4 = _interopRequireDefault(_index3);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -629,51 +627,191 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	__webpack_require__(23);
+	__webpack_require__(20);
 
-	var Home = function (_React$Component) {
-	  _inherits(Home, _React$Component);
+	var About = function (_React$Component) {
+	  _inherits(About, _React$Component);
 
-	  function Home() {
-	    _classCallCheck(this, Home);
+	  function About() {
+	    _classCallCheck(this, About);
 
-	    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
 	  }
 
-	  _createClass(Home, [{
+	  _createClass(About, [{
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
 	        { id: 'homeContainer' },
-	        _react2.default.createElement(_index2.default, { current: 0 }),
+	        _react2.default.createElement(_index2.default, { current: 2 }),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'common_block main_container' },
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'container' },
-	            _react2.default.createElement('img', { src: '/image/home_main_text.png', className: 'main_text' }),
-	            _react2.default.createElement('img', { src: '/image/home_smile.png', className: 'home_smile' })
+	            _react2.default.createElement(_index4.default, null)
 	          )
 	        )
 	      );
 	    }
 	  }]);
 
-	  return Home;
+	  return About;
 	}(_react2.default.Component);
 
-	_reactDom2.default.render(_react2.default.createElement(Home, null), document.querySelector('#topContainer'));
+	_reactDom2.default.render(_react2.default.createElement(About, null), document.querySelector('#topContainer'));
 
 /***/ },
-/* 23 */
+/* 17 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(3);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _reactAutobind = __webpack_require__(5);
+
+	var _reactAutobind2 = _interopRequireDefault(_reactAutobind);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	__webpack_require__(18);
+
+	var CollectionItem = function (_React$Component) {
+	  _inherits(CollectionItem, _React$Component);
+
+	  function CollectionItem(props) {
+	    _classCallCheck(this, CollectionItem);
+
+	    var _this = _possibleConstructorReturn(this, (CollectionItem.__proto__ || Object.getPrototypeOf(CollectionItem)).call(this, props));
+
+	    (0, _reactAutobind2.default)(_this);
+	    return _this;
+	  }
+
+	  _createClass(CollectionItem, [{
+	    key: 'render',
+	    value: function render() {
+	      var _props = this.props,
+	          href = _props.href,
+	          image = _props.image,
+	          text = _props.text,
+	          desc = _props.desc,
+	          title = _props.title;
+
+	      return _react2.default.createElement(
+	        'a',
+	        { href: href, className: 'collection_item' },
+	        _react2.default.createElement('img', { src: image }),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'collection_item_mask' },
+	          _react2.default.createElement(
+	            'p',
+	            { className: 'collection_item_desc' },
+	            desc
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            { className: 'collection_item_title' },
+	            title
+	          ),
+	          _react2.default.createElement('img', { src: '/image/cover_plus.png' })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return CollectionItem;
+	}(_react2.default.Component);
+
+	var CollectionList = function (_React$Component2) {
+	  _inherits(CollectionList, _React$Component2);
+
+	  function CollectionList(props) {
+	    _classCallCheck(this, CollectionList);
+
+	    var _this2 = _possibleConstructorReturn(this, (CollectionList.__proto__ || Object.getPrototypeOf(CollectionList)).call(this, props));
+
+	    (0, _reactAutobind2.default)(_this2);
+	    return _this2;
+	  }
+
+	  _createClass(CollectionList, [{
+	    key: 'buildItems',
+	    value: function buildItems() {
+	      var collections = this.props.collections;
+
+	      var list = [];
+	      collections.forEach(function (collection) {
+	        list.push(_react2.default.createElement(CollectionItem, { image: collection.image, href: collection.href, title: collection.title, desc: collection.desc }));
+	      });
+	      return list;
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { id: 'CollectionList' },
+	        this.buildItems()
+	      );
+	    }
+	  }]);
+
+	  return CollectionList;
+	}(_react2.default.Component);
+
+	CollectionList.defaultProps = {
+	  collections: [{
+	    href: '/collections/renyanzhi',
+	    image: "/image/renyanzhi_cover.png",
+	    desc: "book design .editorial .",
+	    title: "人言志"
+	  }, {
+	    href: '/collections/biye',
+	    image: "/image/biye_cover.png",
+	    desc: "illustation .book design .editorial",
+	    title: "MAMA食谱日记"
+	  }, {
+	    href: '/collections/newsletter',
+	    image: "/image/newsletter_cover.png",
+	    desc: "book design .editorial",
+	    title: "NEWSLETTER 筑境手册"
+	  }, {
+	    href: '/collections/activity',
+	    image: "/image/renyan_activity_cover.png",
+	    desc: "banner",
+	    title: "招贴&活动页"
+	  }]
+	};
+
+	module.exports = CollectionList;
+
+/***/ },
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(24);
+	var content = __webpack_require__(19);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(10)(content, {});
@@ -693,7 +831,7 @@
 	}
 
 /***/ },
-/* 24 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(9)();
@@ -701,7 +839,47 @@
 
 
 	// module
-	exports.push([module.id, "html {\n  height: 100%; }\n\nbody {\n  margin: 0px;\n  height: 100%;\n  font-family: monospace;\n  background-color: #FDD10E; }\n  body .common_block {\n    width: 80%;\n    margin-left: 10%; }\n  body #topContainer {\n    height: 100%; }\n    body #topContainer #homeContainer {\n      height: 100%; }\n    body #topContainer .main_container {\n      margin-left: 5%;\n      height: 100%;\n      display: -webkit-box;\n      display: -moz-box;\n      display: -ms-flexbox;\n      display: -webkit-flex;\n      display: flex;\n      -webkit-flex-direction: column;\n      -moz-flex-direction: column;\n      -ms-flex-direction: column;\n      -o-flex-direction: column;\n      flex-direction: column;\n      -webkit-justify-content: center;\n      -moz-justify-content: center;\n      -ms-justify-content: center;\n      -o-justify-content: center;\n      justify-content: center; }\n      body #topContainer .main_container .container {\n        display: -webkit-box;\n        display: -moz-box;\n        display: -ms-flexbox;\n        display: -webkit-flex;\n        display: flex;\n        -webkit-box-align: center;\n        -webkit-flex-align: center;\n        -ms-flex-align: center;\n        -webkit-align-items: center;\n        align-items: center; }\n        body #topContainer .main_container .container .main_text {\n          width: 60%; }\n        body #topContainer .main_container .container .home_smile {\n          margin-left: 5%;\n          width: 35%; }\n", ""]);
+	exports.push([module.id, "@font-face {\n  font-family: 'flicker';\n  src: url(\"/font/flicker.otf\"); }\n\n#CollectionList {\n  display: -webkit-box;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n  -moz-flex-wrap: wrap;\n  -ms-flex-wrap: wrap;\n  -o-flex-wrap: wrap;\n  flex-wrap: wrap;\n  -webkit-justify-content: center;\n  -moz-justify-content: center;\n  -ms-justify-content: center;\n  -o-justify-content: center;\n  justify-content: center;\n  width: 100%; }\n  #CollectionList .collection_item {\n    position: relative;\n    margin-left: 1.2%;\n    margin-right: 1.2%;\n    margin-top: 1%;\n    margin-bottom: 1%;\n    width: 35%; }\n    #CollectionList .collection_item img {\n      width: 100%;\n      vertical-align: top; }\n    #CollectionList .collection_item .collection_item_mask {\n      display: none;\n      position: absolute;\n      top: 0px;\n      width: 100%;\n      height: 100%;\n      background: rgba(255, 255, 255, 0.8); }\n      #CollectionList .collection_item .collection_item_mask p {\n        margin-left: 10%;\n        width: 80%;\n        color: #333333; }\n      #CollectionList .collection_item .collection_item_mask img {\n        position: absolute;\n        right: 20px;\n        bottom: 20px;\n        height: 15px;\n        width: 15px; }\n      #CollectionList .collection_item .collection_item_mask .collection_item_desc {\n        margin-bottom: 0px;\n        margin-top: 20px;\n        font-size: 9px; }\n      #CollectionList .collection_item .collection_item_mask .collection_item_title {\n        margin-bottom: 0px;\n        margin-top: 8px;\n        font-size: 14px; }\n  #CollectionList .collection_item:hover .collection_item_mask {\n    display: block; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 20 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(21);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(10)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/.0.26.1@css-loader/index.js!./../../../node_modules/.4.1.0@sass-loader/index.js!./style.scss", function() {
+				var newContent = require("!!./../../../node_modules/.0.26.1@css-loader/index.js!./../../../node_modules/.4.1.0@sass-loader/index.js!./style.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 21 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "html {\n  height: 100%; }\n\nbody {\n  margin: 0px;\n  height: 100%;\n  font-family: monospace;\n  background-color: #FDD10E; }\n  body .common_block {\n    width: 80%;\n    margin-left: 10%; }\n  body #topContainer {\n    height: 100%; }\n    body #topContainer #homeContainer {\n      height: 100%; }\n    body #topContainer .main_container {\n      margin-left: 5%;\n      height: 100%;\n      width: 90%;\n      display: -webkit-box;\n      display: -moz-box;\n      display: -ms-flexbox;\n      display: -webkit-flex;\n      display: flex;\n      -webkit-flex-direction: column;\n      -moz-flex-direction: column;\n      -ms-flex-direction: column;\n      -o-flex-direction: column;\n      flex-direction: column;\n      -webkit-justify-content: center;\n      -moz-justify-content: center;\n      -ms-justify-content: center;\n      -o-justify-content: center;\n      justify-content: center; }\n      body #topContainer .main_container .container {\n        width: 100%; }\n", ""]);
 
 	// exports
 
