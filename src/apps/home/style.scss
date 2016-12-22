@@ -20,7 +20,7 @@ body {
     }
     .main_container {
       margin-left: 5%;
-      height: 80%;
+      height: 100%;
       @include flex;
       @include flex-direction(column);
       @include justify-content(center);

@@ -7,6 +7,8 @@
 
 #NavBar {
   height: 100px;
+  width: 100%;
+  position: absolute;
   @include flex;
   @include flex-direction(row-reverse);
   @include align-items(center);
@@ -17,7 +19,7 @@
   .links_container {
     padding: 10px;
     font-family: flicker;
-    margin-right: 10px;
+    margin-right: 40px;
     color: white;
     background-color: #FCC030;
     .link_icon {
