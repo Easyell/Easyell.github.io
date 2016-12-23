@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'flicker';
+  src: url("/font/flicker.otf"); }
+body {
+  margin: 0px;
+  font-family: monospace;
+  background-color: #FDD10E; }
+  body #NavBar {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    -moz-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    -o-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-align: center;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; }
+    body #NavBar .dice_icon {
+      height: 40px;
+      margin-right: 5%; }
+    body #NavBar .links_container {
+      padding: 10px;
+      font-family: flicker;
+      margin-right: 40px;
+      color: white;
+      background-color: #FCC030; }
+      body #NavBar .links_container .link_icon {
+        margin: 10px;
+        height: 20px;
+        text-decoration: none;
+        color: white; }
+      body #NavBar .links_container .selected {
+        color: black; }
+  body .main_container {
+    padding-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 6%;
+    width: 80%; }
+    body .main_container p {
+      margin: 0px; }
+    body .main_container .title {
+      font-size: 30px; }
+    body .main_container .sub_title {
+      font-size: 17px;
+      margin-top: -14px;
+      color: rgba(255, 255, 255, 0.5); }
+    body .main_container .desc {
+      color: #555555;
+      margin-top: 30px;
+      font-size: 10px;
+      margin-bottom: 30px; }
+    body .main_container img {
+      width: 100%;
+      margin-top: 30px; }
+
+/*# sourceMappingURL=collection.css.map */

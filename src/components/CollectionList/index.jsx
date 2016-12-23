@@ -50,25 +50,25 @@ class CollectionList extends React.Component {
 CollectionList.defaultProps = {
   collections:[
     {
-      href: '/collections/renyanzhi',
+      href: '/collections/renyanzhi.html',
       image: "/image/renyanzhi_cover.png",
       desc: "book design .editorial .",
       title: "人言志"
     },
     {
-      href: '/collections/biye',
+      href: '/collections/biye.html',
       image: "/image/biye_cover.png",
       desc: "illustation .book design .editorial",
       title: "MAMA食谱日记"
     },
     {
-      href: '/collections/newsletter',
+      href: '/collections/newsletter.html',
       image: "/image/newsletter_cover.png",
       desc: "book design .editorial",
       title: "NEWSLETTER 筑境手册"
     },
     {
-      href: '/collections/activity',
+      href: '/collections/activity.html',
       image: "/image/renyan_activity_cover.png",
       desc: "banner",
       title: "招贴&活动页"

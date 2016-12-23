@@ -1,0 +1,67 @@
+@import "../src/common/scss/common.scss";
+
+@font-face {
+  font-family: 'flicker';
+  src: url('/font/flicker.otf');
+}
+
+body {
+  margin: 0px;
+  font-family: monospace;
+  background-color: #FDD10E;
+  #NavBar {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    @include flex;
+    @include flex-direction(row-reverse);
+    @include align-items(center);
+    .dice_icon {
+      height: 40px;
+      margin-right: 5%;
+    }
+    .links_container {
+      padding: 10px;
+      font-family: flicker;
+      margin-right: 40px;
+      color: white;
+      background-color: #FCC030;
+      .link_icon {
+        margin: 10px;
+        height: 20px;
+        text-decoration: none;
+        color: white;
+      }
+      .selected {
+        color: black;
+      }
+    }
+  }
+  .main_container {
+    padding-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 6%;
+    width: 80%;
+    p {
+      margin: 0px;
+    }
+    .title {
+      font-size: 30px;
+    }
+    .sub_title {
+      font-size: 17px;
+      margin-top: -14px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .desc {
+      color: #555555;
+      margin-top: 30px;
+      font-size: 10px;
+      margin-bottom: 30px;
+    }
+    img {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+}
