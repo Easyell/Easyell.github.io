@@ -19,14 +19,27 @@ body {
       height: 100%;
     }
     .main_container {
-      margin-left: 5%;
       height: 100%;
+      margin-left: 5%;
       width: 90%;
       @include flex;
       @include flex-direction(column);
       @include justify-content(center);
       .container {
         width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    #topContainer {
+      .main_container {
+        overflow: hidden;
+        display: block;
+        padding-top: 100px;
+        height: auto;
       }
     }
   }

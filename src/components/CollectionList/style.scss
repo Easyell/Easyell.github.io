@@ -17,6 +17,7 @@
     margin-top: 1%;
     margin-bottom: 1%;
     width: 35%;
+    max-width: 350px;
     img {
       width: 100%;
       vertical-align: top;
@@ -55,6 +56,14 @@
   .collection_item:hover {
     .collection_item_mask {
       display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #CollectionList {
+    .collection_item {
+      width: 80%;
     }
   }
 }
