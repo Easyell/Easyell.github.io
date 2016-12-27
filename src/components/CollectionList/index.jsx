@@ -68,7 +68,7 @@ CollectionList.defaultProps = {
       title: "NEWSLETTER 筑境手册"
     },
     {
-      href: '/collections/activity.html',
+      href: '/collections/banner.html',
       image: "/image/renyan_activity_cover.png",
       desc: "banner",
       title: "招贴&活动页"
