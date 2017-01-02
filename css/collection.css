@@ -30,6 +30,7 @@ body {
     body #NavBar .links_container {
       padding: 10px;
       font-family: flicker;
+      font-size: 24px;
       margin-right: 40px;
       color: white;
       background-color: #FCC030; }
