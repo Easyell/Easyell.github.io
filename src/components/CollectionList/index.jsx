@@ -10,9 +10,11 @@ class CollectionItem extends React.Component {
   }
   render() {
     const {href, image, text, desc, title} = this.props
+    let style = {
+      backgroundImage: "url(" + image + ")"
+    }
     return (
-      <a href={href} className="collection_item">
-        <img src={image}></img>
+      <a href={href} style={style} className="collection_item">
         <div className="collection_item_mask">
           <p className="collection_item_desc">{desc}</p>
           <p className="collection_item_title">{title}</p>

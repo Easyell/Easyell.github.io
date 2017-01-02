@@ -25,11 +25,9 @@ class About extends React.Component {
     return (
       <div id="homeContainer">
         <NavBar current={1} ></NavBar>
-        <div className="common_block main_container">
-          <div className="container" >
-            <img src="/image/my_face.png" className="my_face"></img>
-            {this.buildAboutList()}
-          </div>
+        <div className="container" >
+          <img src="/image/my_face.png" className="my_face"></img>
+          {this.buildAboutList()}
         </div>
       </div>
     )

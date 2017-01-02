@@ -277,7 +277,7 @@
 
 
 	// module
-	exports.push([module.id, "@font-face {\n  font-family: 'flicker';\n  src: url(\"/font/flicker.otf\"); }\n\n#NavBar {\n  height: 100px;\n  width: 100%;\n  position: absolute;\n  display: -webkit-box;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-flex-direction: row-reverse;\n  -moz-flex-direction: row-reverse;\n  -ms-flex-direction: row-reverse;\n  -o-flex-direction: row-reverse;\n  flex-direction: row-reverse;\n  -webkit-box-align: center;\n  -webkit-flex-align: center;\n  -ms-flex-align: center;\n  -webkit-align-items: center;\n  align-items: center; }\n  #NavBar .dice_icon {\n    height: 40px;\n    margin-right: 5%; }\n  #NavBar .links_container {\n    padding: 10px;\n    font-family: flicker;\n    margin-right: 40px;\n    color: white;\n    background-color: #FCC030; }\n    #NavBar .links_container .link_icon {\n      margin: 10px;\n      height: 20px;\n      text-decoration: none;\n      color: white; }\n    #NavBar .links_container .selected {\n      color: black; }\n", ""]);
+	exports.push([module.id, "@font-face {\n  font-family: 'flicker';\n  src: url(\"/font/flicker.otf\"); }\n\n#NavBar {\n  height: 100px;\n  width: 100%;\n  position: absolute;\n  display: -webkit-box;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-flex-direction: row-reverse;\n  -moz-flex-direction: row-reverse;\n  -ms-flex-direction: row-reverse;\n  -o-flex-direction: row-reverse;\n  flex-direction: row-reverse;\n  -webkit-box-align: center;\n  -webkit-flex-align: center;\n  -ms-flex-align: center;\n  -webkit-align-items: center;\n  align-items: center; }\n  #NavBar .dice_icon {\n    height: 40px;\n    margin-right: 5%; }\n  #NavBar .links_container {\n    padding: 10px;\n    font-family: flicker;\n    font-size: 24px;\n    margin-right: 40px;\n    color: white;\n    background-color: #FCC030; }\n    #NavBar .links_container .link_icon {\n      margin: 10px;\n      height: 20px;\n      text-decoration: none;\n      color: white; }\n    #NavBar .links_container .selected {\n      color: black; }\n", ""]);
 
 	// exports
 
@@ -647,11 +647,20 @@
 	        _react2.default.createElement(_index2.default, { current: 2 }),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'common_block main_container' },
+	          { className: 'container' },
+	          _react2.default.createElement(_index4.default, null)
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { id: 'foot' },
 	          _react2.default.createElement(
-	            'div',
-	            { className: 'container' },
-	            _react2.default.createElement(_index4.default, null)
+	            'p',
+	            null,
+	            'All content designed by jiangyiyi at 2016',
+	            _react2.default.createElement('br', null),
+	            'No reproduction without express promission',
+	            _react2.default.createElement('br', null),
+	            'Developed by guoshencheng'
 	          )
 	        )
 	      );
@@ -715,10 +724,12 @@
 	          desc = _props.desc,
 	          title = _props.title;
 
+	      var style = {
+	        backgroundImage: "url(" + image + ")"
+	      };
 	      return _react2.default.createElement(
 	        'a',
-	        { href: href, className: 'collection_item' },
-	        _react2.default.createElement('img', { src: image }),
+	        { href: href, style: style, className: 'collection_item' },
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'collection_item_mask' },
@@ -839,7 +850,7 @@
 
 
 	// module
-	exports.push([module.id, "@font-face {\n  font-family: 'flicker';\n  src: url(\"/font/flicker.otf\"); }\n\n#CollectionList {\n  display: -webkit-box;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n  -moz-flex-wrap: wrap;\n  -ms-flex-wrap: wrap;\n  -o-flex-wrap: wrap;\n  flex-wrap: wrap;\n  -webkit-justify-content: center;\n  -moz-justify-content: center;\n  -ms-justify-content: center;\n  -o-justify-content: center;\n  justify-content: center;\n  width: 100%; }\n  #CollectionList .collection_item {\n    position: relative;\n    margin-left: 1.2%;\n    margin-right: 1.2%;\n    margin-top: 1%;\n    margin-bottom: 1%;\n    width: 35%;\n    max-width: 350px; }\n    #CollectionList .collection_item img {\n      width: 100%;\n      vertical-align: top; }\n    #CollectionList .collection_item .collection_item_mask {\n      display: none;\n      position: absolute;\n      top: 0px;\n      width: 100%;\n      height: 100%;\n      background: rgba(255, 255, 255, 0.8); }\n      #CollectionList .collection_item .collection_item_mask p {\n        margin-left: 10%;\n        width: 80%;\n        color: #333333; }\n      #CollectionList .collection_item .collection_item_mask img {\n        position: absolute;\n        right: 20px;\n        bottom: 20px;\n        height: 15px;\n        width: 15px; }\n      #CollectionList .collection_item .collection_item_mask .collection_item_desc {\n        margin-bottom: 0px;\n        margin-top: 20px;\n        font-size: 9px; }\n      #CollectionList .collection_item .collection_item_mask .collection_item_title {\n        margin-bottom: 0px;\n        margin-top: 8px;\n        font-size: 14px; }\n  #CollectionList .collection_item:hover .collection_item_mask {\n    display: block; }\n\n@media screen and (max-width: 750px) {\n  #CollectionList .collection_item {\n    width: 80%; } }\n", ""]);
+	exports.push([module.id, "@font-face {\n  font-family: 'flicker';\n  src: url(\"/font/flicker.otf\"); }\n\n#CollectionList {\n  width: 100%;\n  height: 100%; }\n  #CollectionList .collection_item {\n    position: relative;\n    margin-left: 1.2%;\n    margin-right: 1.2%;\n    margin-top: 1%;\n    margin-bottom: 1%;\n    display: block;\n    float: left;\n    height: 46%;\n    width: 45.2%;\n    background-size: cover; }\n    #CollectionList .collection_item .collection_item_mask {\n      position: absolute;\n      display: none;\n      width: 100%;\n      height: 100%;\n      top: 0px;\n      background: rgba(255, 255, 255, 0.8); }\n      #CollectionList .collection_item .collection_item_mask p {\n        text-decoration: none;\n        margin-left: 10%;\n        width: 80%;\n        color: #333333; }\n      #CollectionList .collection_item .collection_item_mask img {\n        position: absolute;\n        right: 20px;\n        bottom: 20px;\n        height: 15px;\n        width: 15px; }\n      #CollectionList .collection_item .collection_item_mask .collection_item_desc {\n        margin-bottom: 0px;\n        margin-top: 20px;\n        font-size: 9px; }\n      #CollectionList .collection_item .collection_item_mask .collection_item_title {\n        margin-bottom: 0px;\n        margin-top: 8px;\n        font-size: 14px; }\n  #CollectionList .collection_item:hover .collection_item_mask {\n    display: block; }\n", ""]);
 
 	// exports
 
@@ -879,7 +890,7 @@
 
 
 	// module
-	exports.push([module.id, "html {\n  height: 100%; }\n\nbody {\n  margin: 0px;\n  height: 100%;\n  font-family: monospace;\n  background-color: #FDD10E; }\n  body .common_block {\n    width: 80%;\n    margin-left: 10%; }\n  body #topContainer {\n    height: 100%; }\n    body #topContainer #homeContainer {\n      height: 100%; }\n    body #topContainer .main_container {\n      height: 100%;\n      margin-left: 5%;\n      width: 90%;\n      display: -webkit-box;\n      display: -moz-box;\n      display: -ms-flexbox;\n      display: -webkit-flex;\n      display: flex;\n      -webkit-flex-direction: column;\n      -moz-flex-direction: column;\n      -ms-flex-direction: column;\n      -o-flex-direction: column;\n      flex-direction: column;\n      -webkit-justify-content: center;\n      -moz-justify-content: center;\n      -ms-justify-content: center;\n      -o-justify-content: center;\n      justify-content: center; }\n      body #topContainer .main_container .container {\n        width: 100%; }\n\n@media screen and (max-width: 750px) {\n  body #topContainer .main_container {\n    overflow: hidden;\n    display: block;\n    padding-top: 100px;\n    height: auto; } }\n", ""]);
+	exports.push([module.id, "html {\n  height: 100%; }\n\nbody {\n  margin: 0px;\n  height: 100%;\n  font-family: monospace;\n  background-color: #FDD10E; }\n  body #topContainer {\n    height: 100%; }\n    body #topContainer #homeContainer {\n      height: 100%; }\n    body #topContainer .container {\n      position: absolute;\n      left: 0px;\n      top: 0;\n      right: 0;\n      bottom: 0;\n      margin: auto;\n      width: 65%;\n      height: 70%; }\n    body #topContainer #foot {\n      font-size: 12px;\n      color: white;\n      position: absolute;\n      bottom: 0px;\n      width: 65%;\n      left: 18%; }\n", ""]);
 
 	// exports
 

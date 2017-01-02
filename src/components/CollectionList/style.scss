@@ -6,30 +6,28 @@
 }
 
 #CollectionList {
-  @include flex;
-  @include flex-wrap(wrap);
-  @include justify-content(center);
   width: 100%;
+  height: 100%;
   .collection_item {
     position: relative;
     margin-left: 1.2%;
     margin-right: 1.2%;
     margin-top: 1%;
     margin-bottom: 1%;
-    width: 35%;
-    max-width: 350px;
-    img {
-      width: 100%;
-      vertical-align: top;
-    }
+    display: block;
+    float: left;
+    height: 46%;
+    width: 45.2%;
+    background-size: cover;
     .collection_item_mask {
-      display: none;
       position: absolute;
-      top: 0px;
+      display: none;
       width: 100%;
       height: 100%;
+      top: 0px;
       background: rgba(255, 255, 255, 0.8);
       p {
+        text-decoration: none;
         margin-left: 10%;
         width: 80%;
         color: #333333;
@@ -56,14 +54,6 @@
   .collection_item:hover {
     .collection_item_mask {
       display: block;
-    }
-  }
-}
-
-@media screen and (max-width: 750px) {
-  #CollectionList {
-    .collection_item {
-      width: 80%;
     }
   }
 }

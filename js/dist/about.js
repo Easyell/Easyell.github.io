@@ -114,13 +114,9 @@
 	        _react2.default.createElement(_index2.default, { current: 1 }),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'common_block main_container' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'container' },
-	            _react2.default.createElement('img', { src: '/image/my_face.png', className: 'my_face' }),
-	            this.buildAboutList()
-	          )
+	          { className: 'container' },
+	          _react2.default.createElement('img', { src: '/image/my_face.png', className: 'my_face' }),
+	          this.buildAboutList()
 	        )
 	      );
 	    }
@@ -376,7 +372,7 @@
 
 
 	// module
-	exports.push([module.id, "@font-face {\n  font-family: 'flicker';\n  src: url(\"/font/flicker.otf\"); }\n\n#NavBar {\n  height: 100px;\n  width: 100%;\n  position: absolute;\n  display: -webkit-box;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-flex-direction: row-reverse;\n  -moz-flex-direction: row-reverse;\n  -ms-flex-direction: row-reverse;\n  -o-flex-direction: row-reverse;\n  flex-direction: row-reverse;\n  -webkit-box-align: center;\n  -webkit-flex-align: center;\n  -ms-flex-align: center;\n  -webkit-align-items: center;\n  align-items: center; }\n  #NavBar .dice_icon {\n    height: 40px;\n    margin-right: 5%; }\n  #NavBar .links_container {\n    padding: 10px;\n    font-family: flicker;\n    margin-right: 40px;\n    color: white;\n    background-color: #FCC030; }\n    #NavBar .links_container .link_icon {\n      margin: 10px;\n      height: 20px;\n      text-decoration: none;\n      color: white; }\n    #NavBar .links_container .selected {\n      color: black; }\n", ""]);
+	exports.push([module.id, "@font-face {\n  font-family: 'flicker';\n  src: url(\"/font/flicker.otf\"); }\n\n#NavBar {\n  height: 100px;\n  width: 100%;\n  position: absolute;\n  display: -webkit-box;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-flex-direction: row-reverse;\n  -moz-flex-direction: row-reverse;\n  -ms-flex-direction: row-reverse;\n  -o-flex-direction: row-reverse;\n  flex-direction: row-reverse;\n  -webkit-box-align: center;\n  -webkit-flex-align: center;\n  -ms-flex-align: center;\n  -webkit-align-items: center;\n  align-items: center; }\n  #NavBar .dice_icon {\n    height: 40px;\n    margin-right: 5%; }\n  #NavBar .links_container {\n    padding: 10px;\n    font-family: flicker;\n    font-size: 24px;\n    margin-right: 40px;\n    color: white;\n    background-color: #FCC030; }\n    #NavBar .links_container .link_icon {\n      margin: 10px;\n      height: 20px;\n      text-decoration: none;\n      color: white; }\n    #NavBar .links_container .selected {\n      color: black; }\n", ""]);
 
 	// exports
 
@@ -808,7 +804,7 @@
 
 
 	// module
-	exports.push([module.id, "@font-face {\n  font-family: 'flicker';\n  src: url(\"/font/flicker.otf\"); }\n\n#AboutItem .about_title {\n  display: inline-block;\n  margin-bottom: 0px;\n  margin-top: 10px;\n  padding: 10px;\n  padding-top: 6px;\n  padding-bottom: 4px;\n  font-family: flicker;\n  color: white;\n  background-color: black; }\n\n#AboutItem .about_text {\n  color: #5d5d5d;\n  margin-bottom: 0px;\n  font-family: helvetica-light;\n  margin-top: 10px;\n  font-size: 12px; }\n", ""]);
+	exports.push([module.id, "@font-face {\n  font-family: 'flicker';\n  src: url(\"/font/flicker.otf\"); }\n\n#AboutItem .about_title {\n  display: inline-block;\n  margin-bottom: 0px;\n  margin-top: 10px;\n  padding: 10px;\n  padding-top: 6px;\n  padding-left: 30px;\n  padding-right: 30px;\n  padding-bottom: 1px;\n  font-family: flicker;\n  font-size: 24px;\n  color: white;\n  background-color: black; }\n\n#AboutItem .about_text {\n  color: #5d5d5d;\n  margin-bottom: 0px;\n  font-family: helvetica-light;\n  margin-top: 10px;\n  font-size: 15px; }\n", ""]);
 
 	// exports
 
@@ -848,7 +844,7 @@
 
 
 	// module
-	exports.push([module.id, "html {\n  height: 100%; }\n\nbody {\n  margin: 0px;\n  height: 100%;\n  font-family: monospace;\n  background-color: #FDD10E; }\n  body .common_block {\n    width: 80%;\n    margin-left: 10%; }\n  body #topContainer {\n    height: 100%; }\n    body #topContainer #homeContainer {\n      height: 100%; }\n    body #topContainer .main_container {\n      margin-left: 5%;\n      height: 100%;\n      width: 90%;\n      display: -webkit-box;\n      display: -moz-box;\n      display: -ms-flexbox;\n      display: -webkit-flex;\n      display: flex;\n      -webkit-flex-direction: column;\n      -moz-flex-direction: column;\n      -ms-flex-direction: column;\n      -o-flex-direction: column;\n      flex-direction: column;\n      -webkit-justify-content: center;\n      -moz-justify-content: center;\n      -ms-justify-content: center;\n      -o-justify-content: center;\n      justify-content: center; }\n      body #topContainer .main_container .container {\n        width: 100%;\n        display: -webkit-box;\n        display: -moz-box;\n        display: -ms-flexbox;\n        display: -webkit-flex;\n        display: flex;\n        -webkit-box-align: center;\n        -webkit-flex-align: center;\n        -ms-flex-align: center;\n        -webkit-align-items: center;\n        align-items: center;\n        -webkit-flex-direction: row-reverse;\n        -moz-flex-direction: row-reverse;\n        -ms-flex-direction: row-reverse;\n        -o-flex-direction: row-reverse;\n        flex-direction: row-reverse; }\n        body #topContainer .main_container .container .about_list {\n          width: 30%; }\n        body #topContainer .main_container .container .my_face {\n          margin-left: 10%;\n          width: 50%; }\n", ""]);
+	exports.push([module.id, "html {\n  height: 100%; }\n\nbody {\n  margin: 0px;\n  height: 100%;\n  font-family: monospace;\n  background-color: #FDD10E; }\n  body .common_block {\n    width: 80%;\n    margin-left: 10%; }\n  body #topContainer {\n    height: 100%; }\n    body #topContainer #homeContainer {\n      height: 100%; }\n    body #topContainer .container {\n      width: 100%;\n      height: 65%;\n      position: absolute;\n      margin: auto;\n      top: 0;\n      left: 0;\n      bottom: 0;\n      right: 0; }\n      body #topContainer .container .about_list {\n        width: 30%;\n        float: right; }\n      body #topContainer .container .my_face {\n        margin-left: 5%;\n        height: 100%;\n        float: right;\n        margin-right: 8%; }\n", ""]);
 
 	// exports
 

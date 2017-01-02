@@ -11,10 +11,15 @@ class About extends React.Component {
     return (
       <div id="homeContainer">
         <NavBar current={2} ></NavBar>
-        <div className="common_block main_container">
-          <div className="container" >
-            <CollectionList />
-          </div>
+        <div className="container" >
+          <CollectionList />
+        </div>
+        <div id="foot">
+          <p>
+            All content designed by jiangyiyi at 2016<br />
+            No reproduction without express promission<br />
+            Developed by guoshencheng
+          </p>
         </div>
       </div>
     )
