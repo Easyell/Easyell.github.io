@@ -226,11 +226,15 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { id: 'NavBar' },
-	        _react2.default.createElement('img', { className: 'dice_icon', src: '/image/dice_icon.png' }),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'links_container' },
-	          this.buildTitles()
+	          { className: 'right_block' },
+	          _react2.default.createElement('img', { className: 'dice_icon', src: '/image/dice_icon.png' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'links_container' },
+	            this.buildTitles()
+	          )
 	        )
 	      );
 	    }
@@ -372,7 +376,7 @@
 
 
 	// module
-	exports.push([module.id, "@font-face {\n  font-family: 'flicker';\n  src: url(\"/font/flicker.otf\"); }\n\n#NavBar {\n  height: 100px;\n  width: 100%;\n  position: absolute;\n  display: -webkit-box;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-flex-direction: row-reverse;\n  -moz-flex-direction: row-reverse;\n  -ms-flex-direction: row-reverse;\n  -o-flex-direction: row-reverse;\n  flex-direction: row-reverse;\n  -webkit-box-align: center;\n  -webkit-flex-align: center;\n  -ms-flex-align: center;\n  -webkit-align-items: center;\n  align-items: center; }\n  #NavBar .dice_icon {\n    height: 40px;\n    margin-right: 5%; }\n  #NavBar .links_container {\n    padding: 10px;\n    font-family: flicker;\n    font-size: 24px;\n    margin-right: 40px;\n    color: white;\n    background-color: #FCC030; }\n    #NavBar .links_container .link_icon {\n      margin: 10px;\n      height: 20px;\n      text-decoration: none;\n      color: white; }\n    #NavBar .links_container .selected {\n      color: black; }\n", ""]);
+	exports.push([module.id, "@font-face {\n  font-family: 'flicker';\n  src: url(\"/font/flicker.otf\"); }\n\n#NavBar {\n  margin-top: 25px;\n  width: 100%;\n  position: absolute; }\n  #NavBar .right_block {\n    float: right;\n    margin-right: 5%; }\n  #NavBar .right_block:hover .links_container {\n    display: block;\n    animation: show_links 0.5s; }\n  #NavBar .right_block:hover .dice_icon {\n    animation: none; }\n  #NavBar .dice_icon {\n    float: right;\n    height: 40px;\n    animation: shake_dice 0.2s infinite; }\n  #NavBar .links_container {\n    display: none;\n    float: right;\n    padding: 10px;\n    font-family: flicker;\n    font-size: 24px;\n    margin-right: 40px;\n    color: white;\n    background-color: #FCC030; }\n    #NavBar .links_container .link_icon {\n      margin: 10px;\n      height: 20px;\n      text-decoration: none;\n      color: white; }\n    #NavBar .links_container .selected {\n      color: black; }\n\n@keyframes shake_dice {\n  0% {\n    -ms-transform: rotate(-10deg);\n    -webkit-transform: rotate(-10deg);\n    transform: rotate(-10deg); }\n  50% {\n    -ms-transform: rotate(20deg);\n    -webkit-transform: rotate(20deg);\n    transform: rotate(20deg); }\n  100% {\n    -ms-transform: rotate(-10deg);\n    -webkit-transform: rotate(-10deg);\n    transform: rotate(-10deg); } }\n\n@keyframes show_links {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n", ""]);
 
 	// exports
 
@@ -844,7 +848,7 @@
 
 
 	// module
-	exports.push([module.id, "html {\n  height: 100%; }\n\nbody {\n  margin: 0px;\n  height: 100%;\n  font-family: monospace;\n  background-color: #FDD10E; }\n  body .common_block {\n    width: 80%;\n    margin-left: 10%; }\n  body #topContainer {\n    height: 100%; }\n    body #topContainer #homeContainer {\n      height: 100%; }\n    body #topContainer .container {\n      width: 100%;\n      height: 65%;\n      position: absolute;\n      margin: auto;\n      top: 0;\n      left: 0;\n      bottom: 0;\n      right: 0; }\n      body #topContainer .container .about_list {\n        width: 30%;\n        float: right; }\n      body #topContainer .container .my_face {\n        margin-left: 5%;\n        height: 100%;\n        float: right;\n        margin-right: 8%; }\n", ""]);
+	exports.push([module.id, "html {\n  height: 100%; }\n\nbody {\n  margin: 0px;\n  height: 100%;\n  font-family: monospace;\n  background-color: #FDD10E; }\n  body .common_block {\n    width: 80%;\n    margin-left: 10%; }\n  body #topContainer {\n    height: 100%; }\n    body #topContainer #homeContainer {\n      height: 100%; }\n    body #topContainer .container {\n      width: 100%;\n      height: 65%;\n      position: absolute;\n      margin: auto;\n      top: 0;\n      left: 0;\n      bottom: 0;\n      right: 0; }\n      body #topContainer .container .about_list {\n        float: right;\n        margin-top: 20px; }\n      body #topContainer .container .my_face {\n        margin-left: 5%;\n        height: 100%;\n        float: right;\n        margin-right: 16%; }\n", ""]);
 
 	// exports
 

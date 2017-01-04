@@ -27,9 +27,11 @@ class NavBar extends React.Component {
   render() {
     return (
       <div id='NavBar'>
-        <img className="dice_icon" src="/image/dice_icon.png"></img>
-        <div className="links_container">
-          {this.buildTitles()}
+        <div className="right_block">
+          <img className="dice_icon" src="/image/dice_icon.png"></img>
+          <div className="links_container">
+            {this.buildTitles()}
+          </div>
         </div>
       </div>
     )
