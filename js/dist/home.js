@@ -659,6 +659,11 @@
 	            { className: 'container' },
 	            _react2.default.createElement('img', { src: '/image/home_main_text.png', className: 'main_text' }),
 	            _react2.default.createElement('img', { src: '/image/home_smile.png', className: 'home_smile' })
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            { className: 'bottom_text' },
+	            '2016-2017 welcome to jiangyiyi\'s home'
 	          )
 	        )
 	      );
@@ -705,7 +710,7 @@
 
 
 	// module
-	exports.push([module.id, "html {\n  height: 100%; }\n\nbody {\n  margin: 0px;\n  height: 100%;\n  font-family: monospace;\n  background-color: #FDD10E; }\n  body .common_block {\n    width: 80%;\n    margin-left: 10%; }\n  body #topContainer {\n    height: 100%; }\n    body #topContainer #homeContainer {\n      height: 100%; }\n    body #topContainer .main_container {\n      margin-left: 5%;\n      height: 100%;\n      display: -webkit-box;\n      display: -moz-box;\n      display: -ms-flexbox;\n      display: -webkit-flex;\n      display: flex;\n      -webkit-flex-direction: column;\n      -moz-flex-direction: column;\n      -ms-flex-direction: column;\n      -o-flex-direction: column;\n      flex-direction: column;\n      -webkit-justify-content: center;\n      -moz-justify-content: center;\n      -ms-justify-content: center;\n      -o-justify-content: center;\n      justify-content: center; }\n      body #topContainer .main_container .container {\n        display: -webkit-box;\n        display: -moz-box;\n        display: -ms-flexbox;\n        display: -webkit-flex;\n        display: flex;\n        -webkit-box-align: center;\n        -webkit-flex-align: center;\n        -ms-flex-align: center;\n        -webkit-align-items: center;\n        align-items: center; }\n        body #topContainer .main_container .container .main_text {\n          width: 60%; }\n        body #topContainer .main_container .container .home_smile {\n          margin-left: 5%;\n          width: 35%; }\n", ""]);
+	exports.push([module.id, "html {\n  height: 100%; }\n\nbody {\n  margin: 0px;\n  height: 100%;\n  font-family: monospace;\n  background-color: #FDD10E; }\n  body .common_block {\n    width: 80%;\n    margin-left: 10%; }\n  body #topContainer {\n    height: 100%; }\n    body #topContainer #homeContainer {\n      height: 100%; }\n    body #topContainer .main_container {\n      margin-left: 5%;\n      height: 100%;\n      display: -webkit-box;\n      display: -moz-box;\n      display: -ms-flexbox;\n      display: -webkit-flex;\n      display: flex;\n      -webkit-flex-direction: column;\n      -moz-flex-direction: column;\n      -ms-flex-direction: column;\n      -o-flex-direction: column;\n      flex-direction: column;\n      -webkit-justify-content: center;\n      -moz-justify-content: center;\n      -ms-justify-content: center;\n      -o-justify-content: center;\n      justify-content: center; }\n      body #topContainer .main_container .container {\n        display: -webkit-box;\n        display: -moz-box;\n        display: -ms-flexbox;\n        display: -webkit-flex;\n        display: flex;\n        -webkit-box-align: center;\n        -webkit-flex-align: center;\n        -ms-flex-align: center;\n        -webkit-align-items: center;\n        align-items: center; }\n        body #topContainer .main_container .container .main_text {\n          width: 60%; }\n        body #topContainer .main_container .container .home_smile {\n          margin-left: 5%;\n          width: 35%; }\n      body #topContainer .main_container .bottom_text {\n        position: absolute;\n        bottom: 0px;\n        left: 0px;\n        width: 100%;\n        text-align: center;\n        color: rgba(255, 255, 255, 0.65); }\n", ""]);
 
 	// exports
 

@@ -15,6 +15,9 @@ class Home extends React.Component {
             <img src="/image/home_main_text.png" className="main_text"></img>
             <img src="/image/home_smile.png" className="home_smile"></img>
           </div>
+          <p className="bottom_text">
+            2016-2017 welcome to jiangyiyi's home
+          </p>
         </div>
       </div>
     )

@@ -848,7 +848,7 @@
 
 
 	// module
-	exports.push([module.id, "html {\n  height: 100%; }\n\nbody {\n  margin: 0px;\n  height: 100%;\n  font-family: monospace;\n  background-color: #FDD10E; }\n  body .common_block {\n    width: 80%;\n    margin-left: 10%; }\n  body #topContainer {\n    height: 100%; }\n    body #topContainer #homeContainer {\n      height: 100%; }\n    body #topContainer .container {\n      width: 100%;\n      height: 65%;\n      position: absolute;\n      margin: auto;\n      top: 0;\n      left: 0;\n      bottom: 0;\n      right: 0; }\n      body #topContainer .container .about_list {\n        float: right;\n        margin-top: 20px; }\n      body #topContainer .container .my_face {\n        margin-left: 5%;\n        height: 100%;\n        float: right;\n        margin-right: 16%; }\n", ""]);
+	exports.push([module.id, "html {\n  height: 100%; }\n\nbody {\n  margin: 0px;\n  height: 100%;\n  font-family: monospace;\n  background-color: #FDD10E; }\n  body .common_block {\n    width: 80%;\n    margin-left: 10%; }\n  body #topContainer {\n    height: 100%; }\n    body #topContainer #homeContainer {\n      height: 100%; }\n    body #topContainer .container {\n      width: 100%;\n      height: 65%;\n      position: absolute;\n      margin: auto;\n      top: 0;\n      left: 0;\n      bottom: 0;\n      right: 0; }\n      body #topContainer .container .about_list {\n        float: right;\n        margin-top: 30px; }\n      body #topContainer .container .my_face {\n        margin-left: 7%;\n        height: 100%;\n        float: right;\n        margin-right: 14%; }\n", ""]);
 
 	// exports
 
